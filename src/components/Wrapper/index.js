@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
+export const MainWrapper = styled.div`
   display: flex;
   margin: 0px;
   width: 100%;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  padding-top: 65px;
 `
 
 export const Section = styled.section`
@@ -14,4 +15,13 @@ export const Section = styled.section`
   width: ${ props => props.w || '100' }%;
   justify-content: center;
   align-items: center;
+`
+
+export const Wrapper = styled.div`
+  display: flex;
+  margin: 0px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 `
