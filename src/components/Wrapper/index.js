@@ -7,7 +7,10 @@ export const MainWrapper = styled.div`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding-top: 65px;
+  margin-top: 50px;
+  background-image: url('./img/mainbkg.svg');
+  background-position: top;
+  background-size: cover
 `
 
 export const Section = styled.section`

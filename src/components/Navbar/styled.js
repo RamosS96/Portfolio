@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { colors } from "../../utils/colors/colors";
 
 export const Nav = styled.nav`
   display: flex;
@@ -9,8 +10,7 @@ export const Nav = styled.nav`
   padding: 2px 0px;
   top: 0;
   height: 1rem;
-  background: rgb(2,0,36);
-  background: linear-gradient(338deg, rgba(2,0,36,1) 10%, rgba(9,9,121,1) 48%, rgba(0,212,255,1) 76%);
+  background-color: ${colors.black};
   justify-content: space-between;
   align-items: center;
   height: 50px;
@@ -42,16 +42,17 @@ export const NavbarLi = styled.li`
   &:hover {
     transform: scale(1.25,1.25 );
     transition-duration: .7s;
+    
   }
   `
 
 export const NavbarList = styled.span`
   font-size: 1.2rem;
   text-decoration: none;
-  color: white;
+  color: ${colors.white};
   font-family: NunitoBold;
   &:hover{
     text-decoration: none;
-    
+    color: ${colors.orange};
   }
 `  
