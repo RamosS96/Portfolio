@@ -22,6 +22,7 @@ export const Section = styled.section`
 
 export const Wrapper = styled.div`
   display: flex;
+  flex-direction: column;
   margin: 0px;
   width: 100%;
   justify-content: center;

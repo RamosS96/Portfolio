@@ -4,7 +4,9 @@ export const Title1 = styled.h1`
 display: flex;
 text-align: center;
 justify-content: center;
-width: 100%;
+width: auto;
+background-color: rgba(255,255,255,.4);
+background-clip: text;
 `
 
 export const Title2 = styled.h2`
