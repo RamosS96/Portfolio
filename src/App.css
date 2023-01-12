@@ -1,16 +1,12 @@
 @font-face {
-  font-family: Nunito;
-  src: url('../src/utils/fonts/Nunito/NunitoSans-SemiBold.ttf');
+  font-family: Fira;
+  src: url('../src/utils/fonts/Fira/FiraSansCondensed-BoldItalic.ttf');
 }
 @font-face {
-  font-family: NunitoItalic;
-  src: url('../src/utils/fonts/Nunito/NunitoSans-SemiBoldItalic.ttf');
+  font-family: Raleway;
+  src: url('../src/utils/fonts/Raleway/Raleway-VariableFont_wght.ttf');
 }
 @font-face {
-  font-family: NunitoBold;
-  src: url('../src/utils/fonts/Nunito/NunitoSans-Bold.ttf');
-}
-
-body {
-  font-family: Nunito;
+  font-family: Noticia;
+  src: url('../src/utils/fonts/Noticia/NoticiaText-Bold.ttf');
 }
