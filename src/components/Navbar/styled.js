@@ -4,7 +4,7 @@ import { colors } from "../../utils/colors/colors";
 export const Nav = styled.nav`
   display: flex;
   z-index: 999999;
-  min-width: 100%;
+  width: 100%;
   width: 100%;
   position: fixed;
   padding: 2px 0px;
@@ -20,7 +20,6 @@ export const NavbarItem = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  
 `
 
 export const NavbarUl = styled.ul`
@@ -50,7 +49,7 @@ export const NavbarList = styled.span`
   font-size: 1.2rem;
   text-decoration: none;
   color: ${colors.white};
-  font-family: NunitoBold;
+  font-family: Fira;
   &:hover{
     text-decoration: none;
     color: ${colors.orange};

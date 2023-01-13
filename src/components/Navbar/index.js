@@ -1,7 +1,7 @@
 import React from 'react';
 import { Nav, NavbarItem, NavbarUl, NavbarLi, NavbarList } from './styled';
-import {ReactComponent as ReactLogo} from '../../img/icons/react.svg';
-import {ReactComponent as CodeLogo} from '../../img/icons/code.svg';
+import {ReactComponent as ReactLogo} from '../../utils/icons/react.svg';
+import {ReactComponent as CodeLogo} from '../../utils/icons/code.svg';
 
 function Navbar() {
   return (

@@ -18,7 +18,18 @@ width: 100%;
 font-family: Noticia;
 font-size: 2rem;
 `
+export const Title3 = styled.h3`
+display: flex;
+width: 100%;
+font-family: Noticia;
+font-size: 1.5rem;
+margin: 0;
+padding: 0px 10px
+`
 
 export const TitleSpan = styled.span`
   display: inline;
+  @media (max-width: 700px) {
+    display: none;
+  }
 `

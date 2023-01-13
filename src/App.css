@@ -10,3 +10,6 @@
   font-family: Noticia;
   src: url('../src/utils/fonts/Noticia/NoticiaText-Bold.ttf');
 }
+ html {
+  scroll-behavior: smooth;
+ }

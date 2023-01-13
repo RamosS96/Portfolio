@@ -1,8 +1,9 @@
 export const infoSR = {
   titleES:"Acerca de Mi", 
   titleEN:"About me",
-  tech: ['React','Javascript','HTML & CSS','SQL', 'MongoDB', 'Firebase &Google Cloud', 'CloudflareDNS', 'Domain Installation'],
-  frameworks: ['styled-components','Sweet Alert', 'Firebase-Database','dotenv'],
+  tech: ['React','Javascript','HTML', 'CSS','SQL', 'MongoDB', 'Firebase Cloud', 'CloudflareDNS', 'Domain Installation'],
+  iconstech: [''],
+  frameworks: ['styled-components','Sweet Alert', 'Firebase-Database','dotenv','express'],
   careerES: 'Sistemas de Informacion - Facultad de Ciencias Económicas UBA',
   careerEN: 'System Analist - Facultad de Ciencias Económicas UBA',
   careerN: 0.55,

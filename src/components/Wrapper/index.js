@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const MainWrapper = styled.div`
   display: flex;
   margin: 0px;
@@ -10,7 +11,8 @@ export const MainWrapper = styled.div`
   margin-top: 50px;
   background-image: url('./img/mainbkg.svg');
   background-position: top;
-  background-size: cover
+  background-size: 100% ;
+  background-repeat: no-repeat;
 `
 
 export const Section = styled.section`
@@ -18,14 +20,27 @@ export const Section = styled.section`
   width: ${ props => props.w || '100' }%;
   justify-content: center;
   align-items: center;
+  @media (max-width: 700px) {
+    width: 100%;
+  }
 `
 
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 0px;
+  margin: 0px 20px;
   width: 100%;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+`
+
+export const BkgBlue = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 10px 10px;
+  margin: 10px 20px;
+  max-width: 100%;
+  background-color: rgba(72, 152, 211, 0.37);
 `
