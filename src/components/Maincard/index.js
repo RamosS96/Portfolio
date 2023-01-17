@@ -15,4 +15,6 @@ export const Card = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 100%;
+    height: auto;
 `

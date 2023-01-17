@@ -17,6 +17,7 @@ export const MainWrapper = styled.div`
 
 export const Section = styled.section`
   display: flex;
+  flex-direction: column;
   width: ${ props => props.w || '100' }%;
   justify-content: center;
   align-items: center;
@@ -35,12 +36,12 @@ export const Wrapper = styled.div`
   flex-wrap: wrap;
 `
 
-export const BkgBlue = styled.div`
+export const BkgGrey = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   padding: 10px 10px;
   margin: 10px 20px;
   max-width: 100%;
-  background-color: rgba(72, 152, 211, 0.37);
+  background-color: rgba(183, 183, 183, 0.38);
 `

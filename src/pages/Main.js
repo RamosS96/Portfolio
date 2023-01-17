@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Section, MainWrapper, Wrapper, BkgBlue } from '../components/Wrapper';
+import { Section, MainWrapper, Wrapper, BkgGrey } from '../components/Wrapper';
 import { Title1, Title2, Title3, TitleSpan } from '../components/Title';
 import { MainCard, Card } from '../components/Maincard';
 import { infoSR } from '../utils/about';
@@ -11,7 +11,7 @@ import IconBanner from '../components/Iconbanner';
 function Main() {
   const [info, setInfo] = useState([])
   const [lang, setLang] = useState(false)
-  const [selectedTech, setTech] = useState('')
+  const [selectedTech, setTech] = useState('React')
 
   const handleLang = () => {
     setLang(!lang)
@@ -23,7 +23,7 @@ function Main() {
 
   useEffect(() => {
     setInfo(infoSR);
-    
+
   }, [lang])
 
   return (
@@ -43,22 +43,30 @@ function Main() {
             <Paragraph>{(lang === true ? info.aboutES : info.aboutEN)}</Paragraph>
           </MainCard>
         </Section>
-        <Section w='50'>
-          <Wrapper>
-            <BkgBlue>
+        <BkgGrey>
+          <Section w='50'>
+            <Wrapper>
+
               <Card>
                 <Title3>{lang ? 'Tecnologías' : 'Technologies'}</Title3>
                 <IconBanner />
                 <ListUl>
-                  {infoSR.tech.map(d => <ListLi key={d}><ListBtn onClick={()=> {console.log("clicked")}}>{d}</ListBtn></ListLi>)}
+                  {infoSR.tech.map(d => <ListLi key={d}><ListBtn onClick={() => { setTech(d) }}>{d}</ListBtn></ListLi>)}
                 </ListUl>
               </Card>
-            </BkgBlue>
-          </Wrapper>
-        </Section>
-        <Section w='50'>
-          asdasdassda
-        </Section>
+
+            </Wrapper>
+          </Section>
+          <Section w='50'>
+            <Wrapper>
+
+              <Card>
+                <p>{selectedTech}</p>
+              </Card>
+
+            </Wrapper>
+          </Section>
+        </BkgGrey>
       </MainWrapper>
     </>
   );
