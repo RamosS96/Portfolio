@@ -7,31 +7,25 @@ import { Paragraph } from '../components/Paragraphs';
 import { LangBtn, LangBox } from '../components/LangSelect';
 import { ListLi, ListBtn, ListUl } from '../components/List';
 import IconBanner from '../components/Iconbanner';
+import { switchTech, resetAnimations, resetAnimationsMain } from '../utils/fn';
 
 function Main() {
   const [info, setInfo] = useState([])
   const [lang, setLang] = useState(false)
   const [selectedTech, setTech] = useState('React')
 
-  const handleLang = () => {
-    setLang(!lang)
-  }
-
-  const handleTech = (tech) => {
-    setTech(tech)
-  }
 
   useEffect(() => {
     setInfo(infoSR);
 
-  }, [lang])
+  }, [lang,selectedTech])
 
   return (
     <>
       <MainWrapper>
         <LangBox>
 
-          {(lang) ? <LangBtn onClick={handleLang}>ES</LangBtn> : <LangBtn onClick={handleLang}>EN</LangBtn>}
+          {(lang) ? <LangBtn onClick={()=> {setLang(!lang); resetAnimationsMain()}}>ES</LangBtn> : <LangBtn onClick={()=> {setLang(!lang); resetAnimationsMain()}}>EN</LangBtn>}
         </LangBox>
         <Wrapper>
           <Title1 key='owner'>Sebastian Ramos</Title1>
@@ -40,7 +34,7 @@ function Main() {
         <Section w='100'>
           <MainCard bkgimg='"./img/wireframes.jpg"'>
             <Title2>{(lang === true ? info.titleES : info.titleEN)}</Title2>
-            <Paragraph>{(lang === true ? info.aboutES : info.aboutEN)}</Paragraph>
+            <Paragraph id='mainPara'>{(lang === true ? info.aboutES : info.aboutEN)}</Paragraph>
           </MainCard>
         </Section>
         <BkgGrey>
@@ -51,7 +45,7 @@ function Main() {
                 <Title3>{lang ? 'Tecnologías' : 'Technologies'}</Title3>
                 <IconBanner />
                 <ListUl>
-                  {infoSR.tech.map(d => <ListLi key={d}><ListBtn onClick={() => { setTech(d) }}>{d}</ListBtn></ListLi>)}
+                  {infoSR.tech.map(d => <ListLi key={d}><ListBtn onClick={() => { setTech(d);resetAnimations() }}>{d}</ListBtn></ListLi>)}
                 </ListUl>
               </Card>
 
@@ -61,7 +55,9 @@ function Main() {
             <Wrapper>
 
               <Card>
-                <p>{selectedTech}</p>
+                <Paragraph id='techPara'>
+                {switchTech(selectedTech,lang,infoSR)}
+                </Paragraph>
               </Card>
 
             </Wrapper>

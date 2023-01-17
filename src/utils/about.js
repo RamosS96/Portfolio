@@ -9,7 +9,16 @@ export const infoSR = {
   careerN: 0.55,
   aboutES: 'Hola! Soy Sebastián, tengo 26 años, vivo en Buenos Aires, Argentina y estoy en búsqueda de nuevos desafíos para desarrollar mis habilidades y conocimientos FrontEnd. Tengo 2 años de experiencia desarrollando a nivel personal y quiero avanzar en mi carrera. Trabajo muy bien en equipo pero también puedo desenvolverme a la perfección trabajando solo. Me gusta colaborar, buscar soluciones y debatir posibilidades con mis compañeros. Me destaco en la atención al cliente interno y a satisfacer las necesidades del equipo o de mis superiores.',
   aboutEN: `Hi! I'm Sebastián, I'm 26 years old, I live in Buenos Aires, Argentina and I'm looking for new challenges to improve my knowledge and FrontEnd skills. I have 2 years of personal development experience and I want to further my career. I working perfectly alone moreover I'm an excellent team worker. I like to collaborate, find solutions and discuss possibilities with my colleagues. I excel in internal customer service and achieve the needs of the team or my superiors.`,
-  inprogress: ['MERN Stack','VueJS', 'BackEnd Dev'],
+  inprogress: ['MERN Stack','VueJS', 'BackEnd Dev', 'Typescript'],
   portfolio: 'Trineo FC',
-  react: ''  
+  reactES: 'Todos mis proyectos FrontEnd se realizan a través de React. Combinado con styled-components se convierte en una potente herramienta que consume bajos recursos del navegador, permitiendo una mayor legibilidad del codigo evitando estilos en linea del tipo tailwind o bootstrap. TrineoFC está optimizado mobile y construido integramente con styled-components',
+  reactEN: 'All my FrontEnd projects are done through React. Combined with styled-components it becomes a powerful tool that consumes low browser resources, allowing greater code readability by avoiding tailwind or bootstrap inline styles. TrineoFC is mobile optimized and built entirely with styled-components',
+  javascriptES: 'Utilizado principalmente para el manejo de eventos del DOM, paletas de colores para usar en combinación con styled-components, funciones de soporte para la aplicación de React y guardado de variables de entorno para el uso de APIs.',
+  javascriptEN: 'Mainly used for DOM event handling, color palettes for use in combination with styled-components, supporting functions for React application and saving environment variables for API use.',
+  htmlcssES: 'Conocimiento escencial para el armado y estilizado del DOM, formularios con POST a APIs, SEO & META tags insertado de analytics',
+  htmlcssEN: 'Essential knowledge for building and styling the DOM, forms with POST to APIs, SEO & META tags inserted from analytics',
+  sqlES: 'Operaciones básicas de creación, búsqueda, actualización, y borrado (CRUD) a través de MySql o SQLite, conexión a través de NodeJS y express.js',
+  sqlEN: 'Basic create, read, update, and delete (CRUD) operations via MySql or SQLite, connection via NodeJS and express.js',
+  mongoES: 'Creación de clúster en MongoAtlas, instalación del servidor NodeJS (express) y base de datos no relacional, manejo de credenciales de ingreso y autenticación, obtención de datos a través de Javascript & React',
+  mongoEN: 'Creation of a cluster in MongoAtlas, installation of the NodeJS (express) server and non-relational database, management of login and authentication credentials, obtaining data through Javascript & React'  
 }

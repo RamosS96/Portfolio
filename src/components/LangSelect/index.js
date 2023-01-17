@@ -17,8 +17,9 @@ export const LangBtn = styled.button`
 `
 
 export const LangBox = styled.div`
-  position: absolute;
+  position: fixed;
   background-color: rgba(255,255,255,.4);
+  border: solid 1px ${colors.black};
   right: 10px;
   top: 60px;
   display: flex;
