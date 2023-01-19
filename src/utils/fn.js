@@ -8,9 +8,40 @@ export const switchTech = (param,lang,arr) => {
       }
     
     case 'Javascript': {
-      console.log('Javascript')
+      if (lang === true){
+        return arr.javascriptES
+      } else {
+        return arr.javascriptEN
+      }
+    } 
+    case 'HTML' : {
+      if (lang === true){
+        return arr.htmlcssES
+      } else {
+        return arr.htmlcssEN
+      }
     }
-
+    case 'CSS' : {
+      if (lang === true){
+        return arr.htmlcssES
+      } else {
+        return arr.htmlcssEN
+      }
+    }
+    case 'SQL' : {
+      if (lang === true){
+        return arr.sqlES
+      } else {
+        return arr.sqlEN
+      }
+    }
+    case 'MongoDB' : {
+      if (lang === true){
+        return arr.mongoES
+      } else {
+        return arr.mongoEN
+      }
+    }
     default :
       if (lang === true){
         return arr.reactES

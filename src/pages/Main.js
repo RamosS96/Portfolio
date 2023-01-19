@@ -25,7 +25,7 @@ function Main() {
       <MainWrapper>
         <LangBox>
 
-          {(lang) ? <LangBtn onClick={()=> {setLang(!lang); resetAnimationsMain()}}>ES</LangBtn> : <LangBtn onClick={()=> {setLang(!lang); resetAnimationsMain()}}>EN</LangBtn>}
+          {(lang) ? <LangBtn onClick={()=> {setLang(!lang); resetAnimationsMain(); resetAnimations()}}>ES</LangBtn> : <LangBtn onClick={()=> {setLang(!lang); resetAnimationsMain(); resetAnimations()}}>EN</LangBtn>}
         </LangBox>
         <Wrapper>
           <Title1 key='owner'>Sebastian Ramos</Title1>
@@ -33,7 +33,7 @@ function Main() {
         </Wrapper>
         <Section w='100'>
           <MainCard bkgimg='"./img/wireframes.jpg"'>
-            <Title2>{(lang === true ? info.titleES : info.titleEN)}</Title2>
+            <Title2>{(lang === true ? "Acerca de mí" : "About me")}</Title2>
             <Paragraph id='mainPara'>{(lang === true ? info.aboutES : info.aboutEN)}</Paragraph>
           </MainCard>
         </Section>
